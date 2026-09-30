@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NDKC GASS - Facility Repair Request Portal</title>
+    <title>NDKC GASS Office — Portal & Orientation</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,243 +24,606 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- Header / Branding -->
+    <!-- Sticky Header with Dual Logos -->
     <header class="bg-ndkcGreen text-white border-b-4 border-ndkcGold shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="bg-white p-2 rounded-full text-ndkcGreen font-bold text-xl shadow">
-                    <i class="fa-solid font-bold fa-school"></i>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap justify-between items-center gap-4">
+            
+            <!-- Left: School Logo + College Title -->
+            <div class="flex items-center space-x-3.5">
+                <div class="bg-white p-1 rounded-full shadow-md flex items-center justify-center shrink-0">
+                    <img src="SCHOOL LOGO.png" alt="NDKC School Logo" class="h-11 w-11 sm:h-13 sm:w-13 object-contain">
                 </div>
                 <div>
-                    <h1 class="text-xl sm:text-2xl font-extrabold tracking-wide uppercase">Notre Dame of Kidapawan College</h1>
-                    <p class="text-xs text-ndkcGold font-medium uppercase tracking-widest">General Administrative Support Services (GASS) Office</p>
+                    <h1 class="text-base sm:text-xl font-extrabold tracking-wide uppercase leading-tight">Notre Dame of Kidapawan College</h1>
+                    <p class="text-[10px] sm:text-xs text-ndkcGold font-semibold uppercase tracking-widest">General Administrative Support Services (GASS) Office</p>
                 </div>
             </div>
-            <span class="hidden md:inline-block bg-ndkcGold/20 border border-ndkcGold/40 text-ndkcGoldLight text-xs px-3 py-1 rounded-full uppercase tracking-wider font-semibold">
-                A Marist School
-            </span>
+
+            <!-- Right: Navigation Links + Marist Logo Badge -->
+            <div class="flex items-center space-x-5">
+                <nav class="hidden lg:flex items-center gap-5 text-xs font-semibold">
+                    <a href="#about" class="hover:text-ndkcGold transition">About Us</a>
+                    <a href="#services" class="hover:text-ndkcGold transition">Core Services</a>
+                    <a href="#faculty-services" class="hover:text-ndkcGold transition">Faculty Services</a>
+                    <a href="#safety-security" class="hover:text-ndkcGold transition">Safety & Security</a>
+                    <a href="#repair-guidelines" class="hover:text-ndkcGold transition">Guidelines</a>
+                    <a href="#request-form" class="bg-ndkcGold text-ndkcGreenDark px-3 py-1.5 rounded-full font-bold hover:bg-yellow-400 transition">Online Form</a>
+                </nav>
+                
+                <!-- Marist Emblem Badge -->
+                <div class="bg-white/95 px-2.5 py-1 rounded-lg shadow-inner flex items-center gap-2 border border-slate-200">
+                    <img src="MARIST LOGO.png" alt="Marist Logo" class="h-7 sm:h-9 object-contain">
+                    <span class="hidden sm:inline text-[10px] font-extrabold text-ndkcGreenDark uppercase tracking-wider border-l border-slate-300 pl-2">
+                        A Marist<br>School
+                    </span>
+                </div>
+            </div>
+
         </div>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="bg-gradient-to-r from-ndkcGreenDark to-ndkcGreen text-white py-12 px-4 shadow-inner">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-extrabold mb-3">Online Facility Repair Request Portal</h2>
-            <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto">
-                Providing a standardized, efficient procedure to ensure campus facilities remain safe, functional, and well-maintained.
+    <!-- SLIDE 1: Hero Banner / Title Slide -->
+    <section class="bg-gradient-to-r from-ndkcGreenDark via-ndkcGreen to-ndkcGreenDark text-white py-14 px-4 shadow-inner relative overflow-hidden">
+        <div class="max-w-6xl mx-auto text-center relative z-10 space-y-4">
+            <span class="inline-block bg-ndkcGold/20 border border-ndkcGold/50 text-ndkcGoldLight text-xs px-4 py-1 rounded-full uppercase tracking-widest font-bold">
+                A Marist School • Academic Year 2026–2027
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white drop-shadow-md">
+                General Administrative Support Services Office
+            </h2>
+            <p class="text-lg sm:text-xl text-ndkcGold font-semibold italic">
+                Office Orientation & Operations Portal
             </p>
-            <div class="mt-6 flex flex-wrap justify-center gap-3 text-xs sm:text-sm font-semibold">
-                <span class="bg-white/10 px-4 py-1.5 rounded-full border border-white/20"><i class="fa-solid fa-shield-halved mr-1 text-ndkcGold"></i> Safe Campus</span>
-                <span class="bg-white/10 px-4 py-1.5 rounded-full border border-white/20"><i class="fa-solid fa-users mr-1 text-ndkcGold"></i> Strong Community</span>
-                <span class="bg-white/10 px-4 py-1.5 rounded-full border border-white/20"><i class="fa-solid fa-award mr-1 text-ndkcGold"></i> Excellence Together</span>
+            
+            <!-- Slide 1 Sub-Pills -->
+            <div class="pt-6 flex flex-wrap justify-center gap-2 max-w-4xl mx-auto text-xs font-medium">
+                <span class="bg-white/10 border border-white/20 px-3 py-1.5 rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-building text-ndkcGold"></i> Facilities Management</span>
+                <span class="bg-white/10 border border-white/20 px-3 py-1.5 rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-wrench text-ndkcGold"></i> Maintenance Services</span>
+                <span class="bg-white/10 border border-white/20 px-3 py-1.5 rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-broom text-ndkcGold"></i> Housekeeping Services</span>
+                <span class="bg-white/10 border border-white/20 px-3 py-1.5 rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-tree text-ndkcGold"></i> Grounds Maintenance</span>
+                <span class="bg-white/10 border border-white/20 px-3 py-1.5 rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-ndkcGold"></i> Security Coordination</span>
+                <span class="bg-white/10 border border-white/20 px-3 py-1.5 rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-hard-hat text-ndkcGold"></i> Safety & Emergency</span>
+                <span class="bg-white/10 border border-white/20 px-3 py-1.5 rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-box text-ndkcGold"></i> Property & Assets</span>
             </div>
         </div>
     </section>
 
-    <!-- Main Content Container -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 
-        <!-- Submission Section: Google Form & QR Code -->
-        <section class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
-            <div class="bg-slate-100 border-b border-slate-200 px-6 py-4 flex justify-between items-center">
-                <h3 class="text-lg font-bold text-ndkcGreen flex items-center gap-2">
-                    <i class="fa-solid fa-file-signature"></i> Submit a Repair Request
-                </h3>
-                <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">Online Portal</span>
+        <!-- SLIDE 2: Who We Are (About the GASS Office) -->
+        <section id="about" class="bg-white rounded-2xl shadow-md border border-slate-200 p-8">
+            <div class="border-b border-slate-200 pb-4 mb-6">
+                <span class="text-xs font-bold text-ndkcGold uppercase tracking-widest">Section 01</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">WHO WE ARE — About the GASS Office</h3>
             </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 lg:p-8">
-                <!-- Left: QR Code & Direct Scan Info -->
-                <div class="flex flex-col items-center justify-center text-center bg-slate-50 p-6 rounded-xl border border-slate-200">
-                    <h4 class="font-bold text-slate-800 mb-1">Scan via Mobile</h4>
-                    <p class="text-xs text-slate-500 mb-4">Use your smartphone camera to access the Google Form directly.</p>
-                    
-                    <div class="bg-white p-3 rounded-xl shadow-md border border-slate-200 mb-4 max-w-[220px]">
-                        <!-- Embedded QR Code -->
-                        <img src="NDKC repairs request form.png" alt="NDKC Repair Request QR Code" class="w-full h-auto rounded">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <div class="bg-emerald-50 border-l-4 border-ndkcGreen p-4 rounded-r-lg">
+                        <h4 class="font-bold text-ndkcGreen flex items-center gap-2 text-lg">
+                            <i class="fa-solid fa-bullseye"></i> OUR ROLE
+                        </h4>
+                        <p class="text-sm text-slate-700 mt-2 leading-relaxed">
+                            The General Administrative Support Services (GASS) Office is responsible for managing and maintaining NDKC's physical facilities, administrative support services, and campus operations to provide a safe, functional, and conducive learning environment[cite: 4].
+                        </p>
                     </div>
 
-                    <a href="https://docs.google.com/forms" target="_blank" class="w-full bg-ndkcGreen hover:bg-ndkcGreenDark text-white text-xs font-bold py-2.5 px-4 rounded-lg transition shadow flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-external-link-alt"></i> Open Form in New Tab
-                    </a>
+                    <!-- We Support Badges -->
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">WE SUPPORT OUR CAMPUS COMMUNITY:</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-700">
+                                <i class="fa-solid fa-chalkboard-user text-ndkcGreen text-lg block mb-1"></i> FACULTY
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-700">
+                                <i class="fa-solid fa-user-graduate text-ndkcGreen text-lg block mb-1"></i> STUDENTS
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-700">
+                                <i class="fa-solid fa-id-badge text-ndkcGreen text-lg block mb-1"></i> STAFF
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-700">
+                                <i class="fa-solid fa-users text-ndkcGreen text-lg block mb-1"></i> VISITORS
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Right: Embedded Google Form -->
-                <div class="lg:col-span-2 flex flex-col h-[650px] bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
-                    <!-- Replace SRC below with your copied Google Form Embed URL -->
-                    <iframe 
-                        src="YOUR_GOOGLE_FORM_EMBED_URL_HERE" 
-                        class="w-full h-full border-0" 
-                        loading="lazy"
-                        title="NDKC Repair Request Form">
-                        Loading form...
-                    </iframe>
+                <!-- Scope Radial Overview -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center space-y-3">
+                    <h4 class="text-xs font-bold text-slate-500 uppercase">GASS Office Operational Scope</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs font-semibold text-slate-700">
+                        <div class="p-2.5 bg-white rounded border border-slate-200">Facilities Management</div>
+                        <div class="p-2.5 bg-white rounded border border-slate-200">Maintenance Services</div>
+                        <div class="p-2.5 bg-white rounded border border-slate-200">Safety Services</div>
+                        <div class="p-2.5 bg-white rounded border border-slate-200">Property Management</div>
+                        <div class="p-2.5 bg-white rounded border border-slate-200">Transportation</div>
+                        <div class="p-2.5 bg-white rounded border border-slate-200">Security Services</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Priority Classifications Grid -->
-        <section>
-            <div class="text-center mb-8">
-                <h3 class="text-2xl font-bold text-slate-900">Priority Classifications & Response Times</h3>
-                <p class="text-sm text-slate-500 mt-1">Requests are processed based on urgency and safety impact.</p>
+        <!-- SLIDE 3: Our Core Services -->
+        <section id="services" class="space-y-6">
+            <div class="border-b border-slate-200 pb-4">
+                <span class="text-xs font-bold text-ndkcGold uppercase tracking-widest">Section 02</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">OUR CORE SERVICES — What We Do</h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 1. Facilities Management -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-emerald-100 text-ndkcGreen rounded-lg flex items-center justify-center font-bold text-lg mb-3">1</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Facilities Management</h4>
+                    <ul class="text-xs text-slate-600 space-y-1 list-disc list-inside">
+                        <li>Classrooms</li>
+                        <li>Offices</li>
+                        <li>Buildings</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Maintenance Services -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-emerald-100 text-ndkcGreen rounded-lg flex items-center justify-center font-bold text-lg mb-3">2</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Maintenance Services</h4>
+                    <ul class="text-xs text-slate-600 space-y-1 list-disc list-inside">
+                        <li>Electrical</li>
+                        <li>Plumbing</li>
+                        <li>Carpentry</li>
+                        <li>Air-conditioning</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Housekeeping -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-emerald-100 text-ndkcGreen rounded-lg flex items-center justify-center font-bold text-lg mb-3">3</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Housekeeping</h4>
+                    <ul class="text-xs text-slate-600 space-y-1 list-disc list-inside">
+                        <li>Cleaning</li>
+                        <li>Waste Management</li>
+                        <li>Sanitation</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Grounds Maintenance -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-emerald-100 text-ndkcGreen rounded-lg flex items-center justify-center font-bold text-lg mb-3">4</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Grounds Maintenance</h4>
+                    <ul class="text-xs text-slate-600 space-y-1 list-disc list-inside">
+                        <li>Landscaping</li>
+                        <li>Campus cleanliness</li>
+                    </ul>
+                </div>
+
+                <!-- 5. Security Coordination -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-emerald-100 text-ndkcGreen rounded-lg flex items-center justify-center font-bold text-lg mb-3">5</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Security Coordination</h4>
+                    <p class="text-xs text-slate-600">Managing campus security protocols and entry management[cite: 4].</p>
+                </div>
+
+                <!-- 6. Safety & Disaster Preparedness -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-emerald-100 text-ndkcGreen rounded-lg flex items-center justify-center font-bold text-lg mb-3">6</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Occupational Safety</h4>
+                    <p class="text-xs text-slate-600">Disaster preparedness, drills, and emergency readiness[cite: 4].</p>
+                </div>
+
+                <!-- 7. Property & Asset Management -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-emerald-100 text-ndkcGreen rounded-lg flex items-center justify-center font-bold text-lg mb-3">7</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Property & Asset Management</h4>
+                    <p class="text-xs text-slate-600">Inventory control, accountability, transfers, and disposal[cite: 4].</p>
+                </div>
+
+                <!-- 8. Transportation Services -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-emerald-100 text-ndkcGreen rounded-lg flex items-center justify-center font-bold text-lg mb-3">8</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Transportation Services</h4>
+                    <p class="text-xs text-slate-600">Vehicle coordination and official transport services[cite: 4].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Faculty Services -->
+        <section id="faculty-services" class="bg-white rounded-2xl shadow-md border border-slate-200 p-8">
+            <div class="border-b border-slate-200 pb-4 mb-6">
+                <span class="text-xs font-bold text-ndkcGold uppercase tracking-widest">Section 03</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">FACULTY SERVICES — Services You May Need</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Facility Reservations -->
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <i class="fa-solid fa-calendar-check text-ndkcGreen text-2xl mb-3"></i>
+                    <h4 class="font-bold text-slate-800 mb-2">Facility Reservations</h4>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>Student Center</li>
+                        <li>Gymnasium</li>
+                    </ul>
+                </div>
+
+                <!-- Maintenance Requests -->
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <i class="fa-solid fa-screwdriver-wrench text-ndkcGreen text-2xl mb-3"></i>
+                    <h4 class="font-bold text-slate-800 mb-2">Maintenance Requests</h4>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>Broken lights</li>
+                        <li>Air-conditioning concerns</li>
+                        <li>Plumbing issues</li>
+                        <li>Furniture repairs</li>
+                    </ul>
+                </div>
+
+                <!-- Equipment Requests -->
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <i class="fa-solid fa-table text-ndkcGreen text-2xl mb-3"></i>
+                    <h4 class="font-bold text-slate-800 mb-2">Equipment Requests</h4>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>Tables & Chairs</li>
+                        <li>Audio-Visual Equipment</li>
+                        <li>Sound System</li>
+                    </ul>
+                </div>
+
+                <!-- Property Concerns -->
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <i class="fa-solid fa-boxes-packing text-ndkcGreen text-2xl mb-3"></i>
+                    <h4 class="font-bold text-slate-800 mb-2">Property Concerns</h4>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>Inventory & Accountability</li>
+                        <li>Transfer requests</li>
+                        <li>Property disposal</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDES 5 & 6: Campus Safety & Security Guidelines -->
+        <section id="safety-security" class="space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <span class="text-xs font-bold text-ndkcGold uppercase tracking-widest">Section 04</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">CAMPUS SAFETY & SECURITY GUIDELINES</h3>
+            </div>
+
+            <!-- Slide 5: Campus Safety -->
+            <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-8 space-y-6">
+                <h4 class="text-xl font-bold text-ndkcGreen flex items-center gap-2">
+                    <i class="fa-solid fa-shield-cat"></i> Campus Safety — Your Safety Matters
+                </h4>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Emergency Preparedness -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                        <h5 class="font-bold text-slate-800 text-sm mb-3 uppercase tracking-wider text-ndkcGreen">Emergency Preparedness</h5>
+                        <ul class="text-xs text-slate-700 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Fire Safety Protocols</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Earthquake Response Procedures</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Evacuation Procedures</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Incident Reporting</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> First Aid Response</li>
+                        </ul>
+                    </div>
+
+                    <!-- Faculty Responsibilities -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                        <h5 class="font-bold text-slate-800 text-sm mb-3 uppercase tracking-wider text-ndkcGreen">Faculty Responsibilities</h5>
+                        <ul class="text-xs text-slate-700 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-map-location-dot text-ndkcGold"></i> Know evacuation routes</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation text-ndkcGold"></i> Report hazards immediately</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-person-running text-ndkcGold"></i> Participate in emergency drills</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-door-open text-ndkcGold"></i> Keep exits unobstructed</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-ndkcGreen text-white text-center py-3 px-4 rounded-xl text-xs font-bold uppercase tracking-wider">
+                    Be Prepared. Be Aware. Be Safe. — Together, we create a safe and caring campus for everyone[cite: 4].
+                </div>
+            </div>
+
+            <!-- Slide 6: Security Guidelines -->
+            <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-8 space-y-6">
+                <h4 class="text-xl font-bold text-ndkcGreen flex items-center gap-2">
+                    <i class="fa-solid fa-lock"></i> Security & Campus Access Guidelines
+                </h4>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 text-center">
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="text-lg font-bold text-ndkcGreen block mb-1">1</span>
+                        <h5 class="font-bold text-xs text-slate-800 mb-1">Faculty IDs</h5>
+                        <p class="text-[11px] text-slate-500">Always wear your identification card[cite: 4].</p>
+                    </div>
+
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="text-lg font-bold text-ndkcGreen block mb-1">2</span>
+                        <h5 class="font-bold text-xs text-slate-800 mb-1">Vehicle Passes</h5>
+                        <p class="text-[11px] text-slate-500">Follow campus traffic regulations[cite: 4].</p>
+                    </div>
+
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="text-lg font-bold text-ndkcGreen block mb-1">3</span>
+                        <h5 class="font-bold text-xs text-slate-800 mb-1">After-Hours Access</h5>
+                        <p class="text-[11px] text-slate-500">Coordinate with Security when necessary[cite: 4].</p>
+                    </div>
+
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="text-lg font-bold text-ndkcGreen block mb-1">4</span>
+                        <h5 class="font-bold text-xs text-slate-800 mb-1">Visitor Policy</h5>
+                        <p class="text-[11px] text-slate-500">Ensure guests are properly registered[cite: 4].</p>
+                    </div>
+
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 sm:col-span-2 lg:col-span-1">
+                        <span class="text-lg font-bold text-ndkcGreen block mb-1">5</span>
+                        <h5 class="font-bold text-xs text-slate-800 mb-1">Report Immediately</h5>
+                        <p class="text-[11px] text-slate-500">Suspicious persons, lost property, emergencies[cite: 4].</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-100 p-4 rounded-xl text-center text-xs font-semibold text-slate-700 border border-slate-200">
+                    YOUR SAFETY. OUR PRIORITY. OUR COMMUNITY.[cite: 4] <br>
+                    <span class="font-normal text-slate-500">Let us work together to maintain a safe and secure campus for everyone[cite: 4].</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7 & ONLINE FORM: Repair Request Guidelines & Google Form Embed -->
+        <section id="repair-guidelines" class="bg-white rounded-2xl shadow-md border border-slate-200 p-8 space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <span class="text-xs font-bold text-ndkcGold uppercase tracking-widest">Section 05</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">FACILITY REPAIR REQUEST GUIDELINES</h3>
+            </div>
+
+            <!-- Slide 7: Purpose, Who May Submit, General Guidelines -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-800 text-sm mb-1 uppercase text-ndkcGreen">Purpose</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            To provide a standardized procedure for requesting and processing repairs to ensure campus facilities remain safe, functional, and well-maintained[cite: 4].
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-800 text-sm mb-2 uppercase text-ndkcGreen">Who May Submit Requests?</h4>
+                        <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                            <li>Academic Departments</li>
+                            <li>Administrative Offices</li>
+                            <li>Support Units</li>
+                            <li>Other Authorized Campus Offices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                    <h4 class="font-bold text-slate-800 text-sm uppercase text-ndkcGreen">General Guidelines</h4>
+                    <ol class="text-xs text-slate-700 space-y-2 list-decimal list-inside">
+                        <li>Submit a Facility Repair Request Form to GASS[cite: 4].</li>
+                        <li>Requests must be endorsed by the Head of Office (except in emergencies)[cite: 4].</li>
+                        <li>Provide complete details of the problem and its location[cite: 4].</li>
+                        <li>Include photos whenever possible[cite: 4].</li>
+                        <li>Do not undertake repairs or modifications without prior approval from GASS[cite: 4].</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- EMBEDDED FORM & QR CODE -->
+            <div id="request-form" class="pt-6 border-t border-slate-200">
+                <h4 class="text-xl font-bold text-ndkcGreen mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-qrcode"></i> Online Repair Request Portal
+                </h4>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- QR Code Panel -->
+                    <div class="flex flex-col items-center justify-center text-center bg-slate-50 p-6 rounded-xl border border-slate-200">
+                        <h5 class="font-bold text-slate-800 text-sm mb-1">Scan via Mobile</h5>
+                        <p class="text-xs text-slate-500 mb-4">Scan using your mobile camera to submit directly from your phone.</p>
+                        
+                        <div class="bg-white p-3 rounded-xl shadow-md border border-slate-200 mb-4 max-w-[210px]">
+                            <img src="NDKC repairs request form.png" alt="NDKC Repair Request QR Code" class="w-full h-auto rounded">
+                        </div>
+
+                        <a href="https://docs.google.com/forms" target="_blank" class="w-full bg-ndkcGreen hover:bg-ndkcGreenDark text-white text-xs font-bold py-2.5 px-4 rounded-lg transition shadow flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Form in New Window
+                        </a>
+                    </div>
+
+                    <!-- Embed Google Form Panel -->
+                    <div class="lg:col-span-2 h-[600px] bg-slate-50 rounded-xl border border-slate-200 overflow-hidden shadow-inner">
+                        <iframe 
+                            src="YOUR_GOOGLE_FORM_EMBED_URL_HERE" 
+                            class="w-full h-full border-0" 
+                            loading="lazy"
+                            title="NDKC Facility Repair Request Form">
+                            Loading request form...
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDES 8 & 9: Repair Request Workflow & Priority Types -->
+        <section class="space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <span class="text-xs font-bold text-ndkcGold uppercase tracking-widest">Section 06</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">REPAIR WORKFLOW & TYPES OF REQUESTS</h3>
+            </div>
+
+            <!-- Slide 8: 10-Step Workflow -->
+            <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-8 space-y-6">
+                <h4 class="text-xl font-bold text-ndkcGreen">10-Step Repair Request Workflow</h4>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">01</span>
+                        <p class="font-bold text-slate-800 mt-2">Identify Problem</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">02</span>
+                        <p class="font-bold text-slate-800 mt-2">Submit Request Form</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">03</span>
+                        <p class="font-bold text-slate-800 mt-2">GASS Logs Request</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">04</span>
+                        <p class="font-bold text-slate-800 mt-2">Site Inspection</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">05</span>
+                        <p class="font-bold text-slate-800 mt-2">Prioritize & Approve</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">06</span>
+                        <p class="font-bold text-slate-800 mt-2">Schedule Works</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">07</span>
+                        <p class="font-bold text-slate-800 mt-2">Repair & Maintenance</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">08</span>
+                        <p class="font-bold text-slate-800 mt-2">Final Inspection</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">09</span>
+                        <p class="font-bold text-slate-800 mt-2">Office Acceptance</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs">
+                        <span class="font-bold text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded text-[10px]">10</span>
+                        <p class="font-bold text-slate-800 mt-2">Request Closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Priority Classification Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Emergency Repairs -->
+                <div class="bg-white rounded-xl shadow-md border-t-4 border-red-600 p-6 space-y-4">
+                    <span class="bg-red-100 text-red-800 text-[10px] font-extrabold uppercase px-2 py-1 rounded">Priority A</span>
+                    <h4 class="text-lg font-bold text-slate-900">Emergency Repairs</h4>
+                    <p class="text-xs text-slate-600">Repairs that pose an immediate threat to life, safety, or property[cite: 4].</p>
+                    <ul class="text-xs text-slate-500 space-y-1 list-disc list-inside">
+                        <li>Electrical short circuits</li>
+                        <li>Broken water pipes / flooding</li>
+                        <li>Structural damage</li>
+                        <li>Fire safety equipment malfunction</li>
+                        <li>Broken doors compromising security</li>
+                    </ul>
+                    <div class="bg-red-50 p-2.5 rounded border border-red-100 text-center">
+                        <span class="block text-[10px] font-bold text-red-700 uppercase">Response Time</span>
+                        <span class="text-xs font-extrabold text-red-900">Immediate (Within 24 Hours)</span>
+                    </div>
+                </div>
+
+                <!-- Urgent Repairs -->
+                <div class="bg-white rounded-xl shadow-md border-t-4 border-amber-500 p-6 space-y-4">
+                    <span class="bg-amber-100 text-amber-800 text-[10px] font-extrabold uppercase px-2 py-1 rounded">Priority B</span>
+                    <h4 class="text-lg font-bold text-slate-900">Urgent Repairs</h4>
+                    <p class="text-xs text-slate-600">Repairs that significantly affect office operations but do not present immediate danger[cite: 4].</p>
+                    <ul class="text-xs text-slate-500 space-y-1 list-disc list-inside">
+                        <li>Air-conditioning failure</li>
+                        <li>Plumbing leaks</li>
+                        <li>Broken windows</li>
+                        <li>Damaged essential office furniture</li>
+                    </ul>
+                    <div class="bg-amber-50 p-2.5 rounded border border-amber-100 text-center">
+                        <span class="block text-[10px] font-bold text-amber-700 uppercase">Response Time</span>
+                        <span class="text-xs font-extrabold text-amber-900">2–5 Working Days</span>
+                    </div>
+                </div>
+
+                <!-- Routine Repairs -->
+                <div class="bg-white rounded-xl shadow-md border-t-4 border-emerald-600 p-6 space-y-4">
+                    <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold uppercase px-2 py-1 rounded">Priority C</span>
+                    <h4 class="text-lg font-bold text-slate-900">Routine Repairs</h4>
+                    <p class="text-xs text-slate-600">Minor repairs and preventive maintenance[cite: 4].</p>
+                    <ul class="text-xs text-slate-500 space-y-1 list-disc list-inside">
+                        <li>Replacement of light bulbs</li>
+                        <li>Door adjustments</li>
+                        <li>Cabinet repairs</li>
+                        <li>Painting touch-ups</li>
+                        <li>Ceiling tile replacement</li>
+                    </ul>
+                    <div class="bg-emerald-50 p-2.5 rounded border border-emerald-100 text-center">
+                        <span class="block text-[10px] font-bold text-emerald-700 uppercase">Response Time</span>
+                        <span class="text-xs font-extrabold text-emerald-900">10–15 Working Days</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 10: Roles & Responsibilities -->
+        <section class="bg-white rounded-2xl shadow-md border border-slate-200 p-8 space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <span class="text-xs font-bold text-ndkcGold uppercase tracking-widest">Section 07</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">ROLES AND RESPONSIBILITIES</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Emergency -->
-                <div class="bg-white rounded-xl shadow-md border-t-4 border-red-600 p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-xs font-extrabold uppercase tracking-wider text-red-600 bg-red-50 px-2.5 py-1 rounded-md">Emergency</span>
-                            <i class="fa-solid fa-triangle-exclamation text-red-600 text-xl"></i>
-                        </div>
-                        <p class="text-sm text-slate-600 mb-4">Repairs that pose an immediate threat to life, safety, or property.</p>
-                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6 list-disc list-inside">
-                            <li>Electrical short circuits</li>
-                            <li>Broken water pipes / flooding</li>
-                            <li>Structural damage & hazards</li>
-                            <li>Fire safety equipment malfunction</li>
-                        </ul>
-                    </div>
-                    <div class="bg-red-50 rounded-lg p-3 text-center border border-red-100">
-                        <span class="block text-[10px] font-bold uppercase text-red-700">Response Time</span>
-                        <span class="text-xs font-bold text-red-900">Immediate (Within 24 Hours)</span>
-                    </div>
+                <!-- Requesting Office -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+                    <i class="fa-solid fa-building-user text-ndkcGreen text-2xl"></i>
+                    <h4 class="font-bold text-slate-800 text-base">Requesting Office</h4>
+                    <ul class="text-xs text-slate-600 space-y-2">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Report facility issues promptly[cite: 4].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Submit a complete Repair Request Form[cite: 4].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Provide access to the work area[cite: 4].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Confirm satisfactory completion of repairs[cite: 4].</li>
+                    </ul>
                 </div>
 
-                <!-- Urgent -->
-                <div class="bg-white rounded-xl shadow-md border-t-4 border-amber-500 p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-xs font-extrabold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md">Urgent</span>
-                            <i class="fa-solid fa-clock-rotate-left text-amber-500 text-xl"></i>
-                        </div>
-                        <p class="text-sm text-slate-600 mb-4">Repairs that significantly affect office operations without immediate danger.</p>
-                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6 list-disc list-inside">
-                            <li>Air-conditioning unit failure</li>
-                            <li>Plumbing leaks</li>
-                            <li>Broken windows</li>
-                            <li>Damaged essential office furniture</li>
-                        </ul>
-                    </div>
-                    <div class="bg-amber-50 rounded-lg p-3 text-center border border-amber-100">
-                        <span class="block text-[10px] font-bold uppercase text-amber-700">Response Time</span>
-                        <span class="text-xs font-bold text-amber-900">2–5 Working Days</span>
-                    </div>
+                <!-- GASS Office -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+                    <i class="fa-solid fa-clipboard-check text-ndkcGreen text-2xl"></i>
+                    <h4 class="font-bold text-slate-800 text-base">GASS Office</h4>
+                    <ul class="text-xs text-slate-600 space-y-2">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Receive and record repair requests[cite: 4].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Conduct inspections & determine requirements[cite: 4].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Prioritize, schedule, and monitor repair activities[cite: 4].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Coordinate materials, manpower, and contractors[cite: 4].</li>
+                    </ul>
                 </div>
 
-                <!-- Routine -->
-                <div class="bg-white rounded-xl shadow-md border-t-4 border-emerald-600 p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">Routine</span>
-                            <i class="fa-solid fa-screwdriver-wrench text-emerald-600 text-xl"></i>
-                        </div>
-                        <p class="text-sm text-slate-600 mb-4">Minor repairs and scheduled preventive maintenance works.</p>
-                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6 list-disc list-inside">
-                            <li>Light bulb replacements</li>
-                            <li>Door & cabinet adjustments</li>
-                            <li>Painting touch-ups</li>
-                            <li>Ceiling tile replacement</li>
-                        </ul>
-                    </div>
-                    <div class="bg-emerald-50 rounded-lg p-3 text-center border border-emerald-100">
-                        <span class="block text-[10px] font-bold uppercase text-emerald-700">Response Time</span>
-                        <span class="text-xs font-bold text-emerald-900">10–15 Working Days</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 10-Step Repair Request Workflow -->
-        <section class="bg-white rounded-2xl shadow-md border border-slate-200 p-6 sm:p-8">
-            <div class="mb-8">
-                <h3 class="text-2xl font-bold text-slate-900">Standard Repair Request Workflow</h3>
-                <p class="text-sm text-slate-500 mt-1">10-step process from issue identification to completion confirmation.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <!-- Step cards -->
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">01</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">Identify Problem</h4>
-                    <p class="text-xs text-slate-500 mt-1">Spot facility defect or maintenance need.</p>
-                </div>
-
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">02</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">Submit Form</h4>
-                    <p class="text-xs text-slate-500 mt-1">Complete online request form (with photo).</p>
-                </div>
-
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">03</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">GASS Logs Request</h4>
-                    <p class="text-xs text-slate-500 mt-1">Receive, record, and tag submission.</p>
-                </div>
-
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">04</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">Site Inspection</h4>
-                    <p class="text-xs text-slate-500 mt-1">Assess situation & determine requirements.</p>
-                </div>
-
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">05</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">Prioritize & Approve</h4>
-                    <p class="text-xs text-slate-500 mt-1">Classify priority and approve work order.</p>
-                </div>
-
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">06</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">Schedule Works</h4>
-                    <p class="text-xs text-slate-500 mt-1">Assign personnel & schedule window.</p>
-                </div>
-
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">07</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">Repair Execution</h4>
-                    <p class="text-xs text-slate-500 mt-1">Maintenance carries out required work.</p>
-                </div>
-
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">08</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">Final Inspection</h4>
-                    <p class="text-xs text-slate-500 mt-1">Verify quality and completeness.</p>
-                </div>
-
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">09</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">Office Acceptance</h4>
-                    <p class="text-xs text-slate-500 mt-1">Requesting office confirms satisfaction.</p>
-                </div>
-
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
-                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">10</span>
-                    <h4 class="font-bold text-sm text-slate-800 mt-2">Request Closed</h4>
-                    <p class="text-xs text-slate-500 mt-1">Log updated and archived in system.</p>
+                <!-- Maintenance Personnel -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+                    <i class="fa-solid fa-user-gear text-ndkcGreen text-2xl"></i>
+                    <h4 class="font-bold text-slate-800 text-base">Maintenance Personnel</h4>
+                    <ul class="text-xs text-slate-600 space-y-2">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Perform repairs safely and efficiently[cite: 4].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Follow institutional standards & safety protocols[cite: 4].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Report additional defects identified during works[cite: 4].</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- General Policy Reminders -->
-            <div class="mt-8 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl text-xs text-amber-900 space-y-1">
-                <p class="font-bold text-amber-950"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Key Guidelines:</p>
-                <p>• Requests must be endorsed by the Head of Office (except emergencies)[cite: 2].</p>
-                <p>• Include complete details and attach photos whenever possible[cite: 2].</p>
-                <p>• Do not undertake repairs or modifications without prior approval from GASS[cite: 2].</p>
+            <!-- Key Reminder Banner -->
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl text-xs text-amber-900">
+                <p class="font-bold text-amber-950 mb-1"><i class="fa-solid fa-bell mr-1"></i> KEY REMINDER:</p>
+                <p>Emergency repairs should be reported immediately to GASS (or Campus Security after office hours), followed by the submission of the Repair Request Form on the next working day[cite: 4].</p>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-ndkcGreenDark text-slate-300 py-8 border-t-4 border-ndkcGold text-xs">
-        <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
-            <p class="font-bold text-white text-sm">General Administrative Support Services (GASS) Office</p>
-            <p>Notre Dame of Kidapawan College — City of Kidapawan[cite: 2]</p>
-            <p class="text-slate-400">Emergency after-hours contact: Campus Security[cite: 2]</p>
-            <div class="pt-4 border-t border-slate-700 text-slate-400">
-                &copy; 2026 Notre Dame of Kidapawan College. All rights reserved.
+    <!-- SLIDE 11: Closing / Thank You Footer -->
+    <footer class="bg-ndkcGreenDark text-slate-300 py-10 border-t-4 border-ndkcGold text-xs">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
+            <h3 class="text-2xl font-black text-white uppercase tracking-wider">Thank You!</h3>
+            <p class="text-sm text-slate-200 max-w-xl mx-auto">
+                Your cooperation makes our campus safe, functional, and welcoming[cite: 4].
+            </p>
+
+            <div class="py-3 font-extrabold text-ndkcGold text-xs uppercase tracking-widest flex justify-center gap-4">
+                <span>Safe Campus</span> • 
+                <span>Strong Community</span> • 
+                <span>Excellence Together</span>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 text-slate-400">
+                <p class="font-semibold text-slate-300">Notre Dame of Kidapawan College — City of Kidapawan[cite: 4]</p>
+                <p class="mt-1">&copy; 2026 General Administrative Support Services (GASS) Office. All rights reserved.</p>
             </div>
         </div>
     </footer>
