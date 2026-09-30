@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDKC GASS - Facility Repair Request Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ndkcGreen: '#004d25',
+                        ndkcGreenDark: '#003318',
+                        ndkcGold: '#d4af37',
+                        ndkcGoldLight: '#f4e6a1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Branding -->
+    <header class="bg-ndkcGreen text-white border-b-4 border-ndkcGold shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white p-2 rounded-full text-ndkcGreen font-bold text-xl shadow">
+                    <i class="fa-solid font-bold fa-school"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-extrabold tracking-wide uppercase">Notre Dame of Kidapawan College</h1>
+                    <p class="text-xs text-ndkcGold font-medium uppercase tracking-widest">General Administrative Support Services (GASS) Office</p>
+                </div>
+            </div>
+            <span class="hidden md:inline-block bg-ndkcGold/20 border border-ndkcGold/40 text-ndkcGoldLight text-xs px-3 py-1 rounded-full uppercase tracking-wider font-semibold">
+                A Marist School
+            </span>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="bg-gradient-to-r from-ndkcGreenDark to-ndkcGreen text-white py-12 px-4 shadow-inner">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-3">Online Facility Repair Request Portal</h2>
+            <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto">
+                Providing a standardized, efficient procedure to ensure campus facilities remain safe, functional, and well-maintained.
+            </p>
+            <div class="mt-6 flex flex-wrap justify-center gap-3 text-xs sm:text-sm font-semibold">
+                <span class="bg-white/10 px-4 py-1.5 rounded-full border border-white/20"><i class="fa-solid fa-shield-halved mr-1 text-ndkcGold"></i> Safe Campus</span>
+                <span class="bg-white/10 px-4 py-1.5 rounded-full border border-white/20"><i class="fa-solid fa-users mr-1 text-ndkcGold"></i> Strong Community</span>
+                <span class="bg-white/10 px-4 py-1.5 rounded-full border border-white/20"><i class="fa-solid fa-award mr-1 text-ndkcGold"></i> Excellence Together</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+
+        <!-- Submission Section: Google Form & QR Code -->
+        <section class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
+            <div class="bg-slate-100 border-b border-slate-200 px-6 py-4 flex justify-between items-center">
+                <h3 class="text-lg font-bold text-ndkcGreen flex items-center gap-2">
+                    <i class="fa-solid fa-file-signature"></i> Submit a Repair Request
+                </h3>
+                <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">Online Portal</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 lg:p-8">
+                <!-- Left: QR Code & Direct Scan Info -->
+                <div class="flex flex-col items-center justify-center text-center bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-800 mb-1">Scan via Mobile</h4>
+                    <p class="text-xs text-slate-500 mb-4">Use your smartphone camera to access the Google Form directly.</p>
+                    
+                    <div class="bg-white p-3 rounded-xl shadow-md border border-slate-200 mb-4 max-w-[220px]">
+                        <!-- Embedded QR Code -->
+                        <img src="NDKC repairs request form.png" alt="NDKC Repair Request QR Code" class="w-full h-auto rounded">
+                    </div>
+
+                    <a href="https://docs.google.com/forms" target="_blank" class="w-full bg-ndkcGreen hover:bg-ndkcGreenDark text-white text-xs font-bold py-2.5 px-4 rounded-lg transition shadow flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-external-link-alt"></i> Open Form in New Tab
+                    </a>
+                </div>
+
+                <!-- Right: Embedded Google Form -->
+                <div class="lg:col-span-2 flex flex-col h-[650px] bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                    <!-- Replace SRC below with your copied Google Form Embed URL -->
+                    <iframe 
+                        src="YOUR_GOOGLE_FORM_EMBED_URL_HERE" 
+                        class="w-full h-full border-0" 
+                        loading="lazy"
+                        title="NDKC Repair Request Form">
+                        Loading form...
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Priority Classifications Grid -->
+        <section>
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-slate-900">Priority Classifications & Response Times</h3>
+                <p class="text-sm text-slate-500 mt-1">Requests are processed based on urgency and safety impact.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Emergency -->
+                <div class="bg-white rounded-xl shadow-md border-t-4 border-red-600 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-red-600 bg-red-50 px-2.5 py-1 rounded-md">Emergency</span>
+                            <i class="fa-solid fa-triangle-exclamation text-red-600 text-xl"></i>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Repairs that pose an immediate threat to life, safety, or property.</p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6 list-disc list-inside">
+                            <li>Electrical short circuits</li>
+                            <li>Broken water pipes / flooding</li>
+                            <li>Structural damage & hazards</li>
+                            <li>Fire safety equipment malfunction</li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 rounded-lg p-3 text-center border border-red-100">
+                        <span class="block text-[10px] font-bold uppercase text-red-700">Response Time</span>
+                        <span class="text-xs font-bold text-red-900">Immediate (Within 24 Hours)</span>
+                    </div>
+                </div>
+
+                <!-- Urgent -->
+                <div class="bg-white rounded-xl shadow-md border-t-4 border-amber-500 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md">Urgent</span>
+                            <i class="fa-solid fa-clock-rotate-left text-amber-500 text-xl"></i>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Repairs that significantly affect office operations without immediate danger.</p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6 list-disc list-inside">
+                            <li>Air-conditioning unit failure</li>
+                            <li>Plumbing leaks</li>
+                            <li>Broken windows</li>
+                            <li>Damaged essential office furniture</li>
+                        </ul>
+                    </div>
+                    <div class="bg-amber-50 rounded-lg p-3 text-center border border-amber-100">
+                        <span class="block text-[10px] font-bold uppercase text-amber-700">Response Time</span>
+                        <span class="text-xs font-bold text-amber-900">2–5 Working Days</span>
+                    </div>
+                </div>
+
+                <!-- Routine -->
+                <div class="bg-white rounded-xl shadow-md border-t-4 border-emerald-600 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">Routine</span>
+                            <i class="fa-solid fa-screwdriver-wrench text-emerald-600 text-xl"></i>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Minor repairs and scheduled preventive maintenance works.</p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6 list-disc list-inside">
+                            <li>Light bulb replacements</li>
+                            <li>Door & cabinet adjustments</li>
+                            <li>Painting touch-ups</li>
+                            <li>Ceiling tile replacement</li>
+                        </ul>
+                    </div>
+                    <div class="bg-emerald-50 rounded-lg p-3 text-center border border-emerald-100">
+                        <span class="block text-[10px] font-bold uppercase text-emerald-700">Response Time</span>
+                        <span class="text-xs font-bold text-emerald-900">10–15 Working Days</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10-Step Repair Request Workflow -->
+        <section class="bg-white rounded-2xl shadow-md border border-slate-200 p-6 sm:p-8">
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-slate-900">Standard Repair Request Workflow</h3>
+                <p class="text-sm text-slate-500 mt-1">10-step process from issue identification to completion confirmation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                <!-- Step cards -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">01</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">Identify Problem</h4>
+                    <p class="text-xs text-slate-500 mt-1">Spot facility defect or maintenance need.</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">02</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">Submit Form</h4>
+                    <p class="text-xs text-slate-500 mt-1">Complete online request form (with photo).</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">03</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">GASS Logs Request</h4>
+                    <p class="text-xs text-slate-500 mt-1">Receive, record, and tag submission.</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">04</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">Site Inspection</h4>
+                    <p class="text-xs text-slate-500 mt-1">Assess situation & determine requirements.</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">05</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">Prioritize & Approve</h4>
+                    <p class="text-xs text-slate-500 mt-1">Classify priority and approve work order.</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">06</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">Schedule Works</h4>
+                    <p class="text-xs text-slate-500 mt-1">Assign personnel & schedule window.</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">07</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">Repair Execution</h4>
+                    <p class="text-xs text-slate-500 mt-1">Maintenance carries out required work.</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">08</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">Final Inspection</h4>
+                    <p class="text-xs text-slate-500 mt-1">Verify quality and completeness.</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">09</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">Office Acceptance</h4>
+                    <p class="text-xs text-slate-500 mt-1">Requesting office confirms satisfaction.</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 relative">
+                    <span class="text-xs font-black text-ndkcGold bg-ndkcGreen px-2 py-0.5 rounded">10</span>
+                    <h4 class="font-bold text-sm text-slate-800 mt-2">Request Closed</h4>
+                    <p class="text-xs text-slate-500 mt-1">Log updated and archived in system.</p>
+                </div>
+            </div>
+
+            <!-- General Policy Reminders -->
+            <div class="mt-8 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl text-xs text-amber-900 space-y-1">
+                <p class="font-bold text-amber-950"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Key Guidelines:</p>
+                <p>• Requests must be endorsed by the Head of Office (except emergencies)[cite: 2].</p>
+                <p>• Include complete details and attach photos whenever possible[cite: 2].</p>
+                <p>• Do not undertake repairs or modifications without prior approval from GASS[cite: 2].</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ndkcGreenDark text-slate-300 py-8 border-t-4 border-ndkcGold text-xs">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
+            <p class="font-bold text-white text-sm">General Administrative Support Services (GASS) Office</p>
+            <p>Notre Dame of Kidapawan College — City of Kidapawan[cite: 2]</p>
+            <p class="text-slate-400">Emergency after-hours contact: Campus Security[cite: 2]</p>
+            <div class="pt-4 border-t border-slate-700 text-slate-400">
+                &copy; 2026 Notre Dame of Kidapawan College. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
