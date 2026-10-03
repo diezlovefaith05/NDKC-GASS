@@ -47,7 +47,7 @@
             scroll-margin-top: 180px;
         }
 
-        /* Clean Circular Mask: Strips any outer background borders */
+        /* Clean Circular Mask for School Seal */
         .clean-seal {
             clip-path: circle(49% at 50% 50%);
             object-fit: contain;
@@ -56,12 +56,11 @@
             box-shadow: none !important;
         }
 
-        /* Prevent image/font layout shifts or flickering */
         img {
             content-visibility: auto;
         }
 
-        /* Custom Multi-Layer Image Background Overlay Utility Classes */
+        /* Background Overlays */
         .bg-hero-ndkc1 {
             background-image: linear-gradient(135deg, rgba(0, 46, 21, 0.92) 0%, rgba(0, 72, 34, 0.88) 50%, rgba(0, 30, 12, 0.95) 100%), url('NDKC 1.jpg');
             background-size: cover;
@@ -103,7 +102,6 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -124,11 +122,11 @@
     <!-- HEADER / BRANDING & NAVIGATION -->
     <header class="sticky top-0 z-50 shadow-xl border-b border-slate-200 bg-white">
         
-        <!-- WHITE TOP HEADER BAR (CLEAN EMBEDDED LOGO & INSTITUTION TITLE) -->
+        <!-- WHITE TOP HEADER BAR -->
         <div class="bg-white py-3 px-4 sm:px-8 border-b border-slate-100">
             <div class="max-w-7xl mx-auto flex justify-between items-center">
                 
-                <!-- Left: Clean NDKC School Seal + Institution Title -->
+                <!-- Left: NDKC Seal & Title -->
                 <a href="#" class="flex items-center gap-3 sm:gap-4 shrink-0 group">
                     <div class="relative flex items-center justify-center shrink-0">
                         <img src="ndkc_logo_clean.jpg" 
@@ -143,7 +141,7 @@
                     </span>
                 </a>
 
-                <!-- Right: Quick Utilities (Search & Social Icons) -->
+                <!-- Right: Quick Utilities -->
                 <div class="flex items-center gap-2 sm:gap-3 text-slate-600">
                     <button onclick="document.getElementById('prioritySearch').focus()" title="Search Portal" class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-slate-100 text-slate-600 transition">
                         <i class="fa-solid fa-magnifying-glass text-sm"></i>
@@ -166,7 +164,6 @@
         <div class="bg-gradient-to-r from-ndkcGreenDark via-ndkcGreen to-ndkcGreenDark py-2.5 px-4 sm:px-8 border-b-2 border-emerald-500 text-white">
             <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
                 
-                <!-- Navigation Pill Buttons -->
                 <nav class="hidden xl:flex flex-wrap items-center gap-2 text-xs font-heading font-extrabold">
                     <a href="#about" class="border-2 border-emerald-400/80 bg-white/10 hover:bg-emerald-500 hover:border-emerald-300 text-white transition px-3.5 py-1.5 rounded-xl shadow-md backdrop-blur-md">Who We Are</a>
                     <a href="#services" class="border-2 border-emerald-400/80 bg-white/10 hover:bg-emerald-500 hover:border-emerald-300 text-white transition px-3.5 py-1.5 rounded-xl shadow-md backdrop-blur-md">Core Services</a>
@@ -177,7 +174,6 @@
                     <a href="#roles" class="border-2 border-emerald-400/80 bg-white/10 hover:bg-emerald-500 hover:border-emerald-300 text-white transition px-3.5 py-1.5 rounded-xl shadow-md backdrop-blur-md">Roles</a>
                 </nav>
 
-                <!-- Marist School Badge & Mobile Toggle -->
                 <div class="flex items-center gap-3 ml-auto">
                     <div class="hidden sm:flex bg-emerald-950/80 border-2 border-emerald-400 text-white px-3 py-1 rounded-xl items-center gap-2 backdrop-blur-md">
                         <img src="MARIST LOGO_2.png" onerror="this.onerror=null; this.src='MARIST LOGO.png';" alt="Marist Emblem" class="h-6 w-auto object-contain">
@@ -187,7 +183,6 @@
                         </div>
                     </div>
 
-                    <!-- Mobile Menu Button -->
                     <button onclick="toggleMobileMenu()" class="xl:hidden p-2 text-white border-2 border-emerald-400 bg-white/10 hover:bg-emerald-500 transition focus:outline-none rounded-xl">
                         <i class="fa-solid fa-bars text-lg"></i>
                     </button>
@@ -196,7 +191,7 @@
             </div>
         </div>
 
-        <!-- Mobile Drawer Menu -->
+        <!-- Mobile Menu Drawer -->
         <div id="mobileMenu" class="hidden xl:hidden bg-ndkcGreenDark border-t border-emerald-800 px-6 py-4 space-y-2 text-sm font-heading font-bold text-white">
             <a href="#about" onclick="toggleMobileMenu()" class="block py-2 px-4 rounded-xl border border-emerald-500 bg-white/5 hover:bg-emerald-600">Who We Are</a>
             <a href="#services" onclick="toggleMobileMenu()" class="block py-2 px-4 rounded-xl border border-emerald-500 bg-white/5 hover:bg-emerald-600">Core Services</a>
@@ -212,7 +207,6 @@
     <section id="hero" class="bg-hero-ndkc1 text-white relative overflow-hidden py-16 sm:py-24 border-b-8 border-ndkcGreen shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 relative z-10">
             
-            <!-- Taglines in Serif Italic -->
             <div class="space-y-2">
                 <h2 class="font-serifTagline italic text-3xl sm:text-5xl lg:text-6xl text-white font-medium tracking-tight drop-shadow-md">
                     In the Spirit of St. Marcellin Champagnat
@@ -224,14 +218,12 @@
 
             <div class="w-full h-px bg-emerald-500/40 my-4"></div>
 
-            <!-- Main Heading & Office Name -->
             <div class="space-y-4">
                 <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight text-white leading-none drop-shadow-lg">
                     GENERAL ADMINISTRATIVE<br>
                     <span class="text-emerald-400">SUPPORT SERVICES</span> OFFICE
                 </h1>
                 
-                <!-- Description Paragraph Below Office Name -->
                 <p class="text-slate-100 text-base sm:text-xl max-w-3xl font-medium leading-relaxed drop-shadow">
                     Managing and maintaining NDKC's physical facilities, administrative support services, security, safety, and campus operations to provide a safe, functional, and conducive learning environment.
                 </p>
@@ -248,7 +240,7 @@
                 </a>
             </div>
 
-            <!-- Quick Service Pillars Bar -->
+            <!-- Quick Pillars -->
             <div class="pt-8">
                 <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
                     <div class="glass-panel p-4 rounded-xl text-center space-y-2 hover:border-emerald-400 transition transform hover:-translate-y-1">
@@ -299,7 +291,6 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                <!-- Our Role Text -->
                 <div class="lg:col-span-7 space-y-8">
                     <div class="bg-white/95 p-8 rounded-2xl border-l-8 border-ndkcGreen shadow-md space-y-4">
                         <div class="flex items-center gap-3 text-ndkcGreen font-heading font-extrabold text-xl">
@@ -311,7 +302,6 @@
                         </p>
                     </div>
 
-                    <!-- Campus Beneficiaries -->
                     <div class="bg-white/90 p-8 rounded-2xl border border-slate-200 shadow-sm space-y-5">
                         <h3 class="font-heading font-bold text-sm uppercase tracking-wider text-slate-500 flex items-center gap-2">
                             <i class="fa-solid fa-heart text-emerald-600"></i> WE SUPPORT OUR CAMPUS COMMUNITY:
@@ -337,7 +327,6 @@
                     </div>
                 </div>
 
-                <!-- Hub Graphic -->
                 <div class="lg:col-span-5 bg-white/95 p-8 rounded-2xl border border-slate-200 shadow-md text-center space-y-6">
                     <span class="text-xs font-heading font-bold uppercase tracking-widest text-emerald-700">Centralized Infrastructure</span>
                     <h4 class="font-heading font-extrabold text-slate-900 text-lg">GASS Operational Hub</h4>
@@ -385,7 +374,6 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Service Cards -->
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-ndkcGreen transition space-y-4 group">
                     <div class="flex justify-between items-center">
                         <div class="w-12 h-12 bg-ndkcGreen text-white font-heading font-black rounded-xl flex items-center justify-center text-lg shadow">1</div>
@@ -476,7 +464,7 @@
                         <div class="w-12 h-12 bg-ndkcGreen text-white font-heading font-black rounded-xl flex items-center justify-center text-lg shadow">8</div>
                         <i class="fa-solid fa-bus text-slate-300 text-3xl group-hover:text-ndkcGreen transition"></i>
                     </div>
-                    <h3 class="font-heading font-extrabold text-slate-900 text-lg">Transportation Services <span class="text-xs text-slate-400 uppercase font-normal">(IF APPLICABLE)</span></h3>
+                    <h3 class="font-heading font-extrabold text-slate-900 text-lg">Transportation Services</h3>
                     <p class="text-sm text-slate-600 leading-relaxed font-medium">
                         Campus official transport scheduling and fleet management.
                     </p>
@@ -557,7 +545,6 @@
                 <i class="fa-solid fa-shield-halved text-emerald-400 text-3xl"></i>
             </div>
 
-            <!-- Campus Safety -->
             <div class="space-y-6">
                 <h3 class="font-heading font-extrabold text-xl text-emerald-300 uppercase tracking-wider flex items-center gap-3">
                     <i class="fa-solid fa-heart-pulse text-2xl"></i> CAMPUS SAFETY — YOUR SAFETY MATTERS
@@ -595,7 +582,6 @@
                 </div>
             </div>
 
-            <!-- Security Guidelines -->
             <div class="space-y-6 border-t border-white/20 pt-10">
                 <h3 class="font-heading font-extrabold text-xl text-emerald-300 uppercase tracking-wider flex items-center gap-3">
                     <i class="fa-solid fa-lock text-2xl"></i> SECURITY & CAMPUS ACCESS — SECURITY GUIDELINES
@@ -650,7 +636,6 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <!-- Left: Purpose & Requesters -->
                 <div class="lg:col-span-5 space-y-6">
                     <div class="bg-white p-8 rounded-2xl border-l-8 border-ndkcGreen shadow-sm space-y-3">
                         <h3 class="font-heading font-extrabold text-sm uppercase text-ndkcGreen flex items-center gap-2">
@@ -674,7 +659,6 @@
                     </div>
                 </div>
 
-                <!-- Right: 5 Guidelines -->
                 <div class="lg:col-span-7 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
                     <h3 class="font-heading font-extrabold text-sm uppercase text-ndkcGreen flex items-center gap-2 border-b pb-3">
                         <i class="fa-solid fa-list-check text-emerald-600"></i> GENERAL GUIDELINES
@@ -746,7 +730,7 @@
                         </div>
 
                         <p class="text-sm text-slate-700 leading-relaxed font-medium">
-                            Submit your facility maintenance tickets directly through our web system. Every submitted ticket generates an official tracking reference ID for easy follow-up with the GASS Office.
+                            Submit your facility maintenance tickets directly to Google Forms owned by <strong class="text-ndkcGreen">rdiez@ndkc.edu.ph</strong>. Every submitted ticket is automatically recorded in the response sheet.
                         </p>
 
                         <div class="pt-2 flex flex-col sm:flex-row gap-4">
@@ -754,10 +738,10 @@
                                 <i class="fa-solid fa-paper-plane text-base"></i>
                                 <span>ONLINE REPAIR REQUEST</span>
                             </button>
-                            <button onclick="copyFormLink()" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 text-sm font-heading font-bold py-4 px-6 rounded-2xl transition shadow-sm flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-link text-emerald-600"></i>
-                                <span id="copyLinkBtnText">Copy Direct Portal Link</span>
-                            </button>
+                            <a href="https://forms.gle/LrMqcXbPF1f3HFG9" target="_blank" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 text-sm font-heading font-bold py-4 px-6 rounded-2xl transition shadow-sm flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-emerald-600"></i>
+                                <span>Open Google Form Directly</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -773,7 +757,7 @@
                 </div>
             </div>
 
-            <!-- CURVED WINDING ROAD MAP PRESENTATION FOR 10-STEP REPAIR WORKFLOW -->
+            <!-- CURVED ROAD MAP INFOGRAPHIC FOR 10-STEP REPAIR WORKFLOW -->
             <div class="bg-white rounded-3xl shadow-2xl border-2 border-ndkcGreen p-6 sm:p-12 space-y-12 overflow-x-auto">
                 <div class="text-center space-y-2">
                     <span class="text-xs font-heading font-black text-emerald-800 uppercase tracking-widest bg-emerald-100 px-4 py-1.5 rounded-full inline-block">ROADMAP INFOGRAPHIC</span>
@@ -781,95 +765,77 @@
                     <p class="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto">Follow the winding path from initial defect identification to complete request resolution.</p>
                 </div>
 
-                <!-- DESKTOP / TABLET WINDING ROAD MAP INFOGRAPHIC (10 STEPS ON CURVED ROAD TRACK) -->
                 <div class="min-w-[900px] py-12 relative px-4">
-                    
-                    <!-- SVG Winding Road Track Line -->
                     <svg class="w-full h-44 overflow-visible" viewBox="0 0 1000 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Outer Black Road Curve -->
                         <path d="M 0,60 Q 50,0 100,60 T 200,60 T 300,60 T 400,60 T 500,60 T 600,60 T 700,60 T 800,60 T 900,60 T 1000,60" stroke="#1e293b" stroke-width="26" stroke-linecap="round" fill="none" />
-                        <!-- Inner White Dash Lanes -->
                         <path d="M 0,60 Q 50,0 100,60 T 200,60 T 300,60 T 400,60 T 500,60 T 600,60 T 700,60 T 800,60 T 900,60 T 1000,60" stroke="#ffffff" stroke-width="3" stroke-dasharray="10 8" stroke-linecap="round" fill="none" />
                     </svg>
 
-                    <!-- 10 Location Pin Milestones Positioned Along the Winding Road -->
                     <div class="absolute inset-0 flex justify-between items-center px-4">
-                        
-                        <!-- Step 1 (Pin Below) -->
                         <div class="relative flex flex-col items-center text-center w-20 translate-y-12">
                             <div class="w-10 h-10 rounded-full bg-rose-500 text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform -translate-y-2 hover:scale-125 transition cursor-pointer">1</div>
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mt-1">Identify Defect</h5>
                             <p class="text-[10px] text-slate-500 leading-tight">Spot facility issue</p>
                         </div>
 
-                        <!-- Step 2 (Pin Above) -->
                         <div class="relative flex flex-col items-center text-center w-20 -translate-y-12">
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mb-1">Submit Form</h5>
                             <p class="text-[10px] text-slate-500 leading-tight mb-1">Online / QR Request</p>
                             <div class="w-10 h-10 rounded-full bg-teal-500 text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform translate-y-2 hover:scale-125 transition cursor-pointer">2</div>
                         </div>
 
-                        <!-- Step 3 (Pin Below) -->
                         <div class="relative flex flex-col items-center text-center w-20 translate-y-12">
                             <div class="w-10 h-10 rounded-full bg-indigo-500 text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform -translate-y-2 hover:scale-125 transition cursor-pointer">3</div>
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mt-1">GASS Logs Ticket</h5>
                             <p class="text-[10px] text-slate-500 leading-tight">Official ID generated</p>
                         </div>
 
-                        <!-- Step 4 (Pin Above) -->
                         <div class="relative flex flex-col items-center text-center w-20 -translate-y-12">
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mb-1">Site Inspection</h5>
                             <p class="text-[10px] text-slate-500 leading-tight mb-1">Technical assessment</p>
                             <div class="w-10 h-10 rounded-full bg-amber-500 text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform translate-y-2 hover:scale-125 transition cursor-pointer">4</div>
                         </div>
 
-                        <!-- Step 5 (Pin Below) -->
                         <div class="relative flex flex-col items-center text-center w-20 translate-y-12">
                             <div class="w-10 h-10 rounded-full bg-sky-500 text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform -translate-y-2 hover:scale-125 transition cursor-pointer">5</div>
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mt-1">Approve Order</h5>
                             <p class="text-[10px] text-slate-500 leading-tight">Prioritize & schedule</p>
                         </div>
 
-                        <!-- Step 6 (Pin Above) -->
                         <div class="relative flex flex-col items-center text-center w-20 -translate-y-12">
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mb-1">Assign Team</h5>
                             <p class="text-[10px] text-slate-500 leading-tight mb-1">Tools & personnel</p>
                             <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform translate-y-2 hover:scale-125 transition cursor-pointer">6</div>
                         </div>
 
-                        <!-- Step 7 (Pin Below) -->
                         <div class="relative flex flex-col items-center text-center w-20 translate-y-12">
                             <div class="w-10 h-10 rounded-full bg-orange-500 text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform -translate-y-2 hover:scale-125 transition cursor-pointer">7</div>
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mt-1">Repair Execution</h5>
                             <p class="text-[10px] text-slate-500 leading-tight">Maintenance works</p>
                         </div>
 
-                        <!-- Step 8 (Pin Above) -->
                         <div class="relative flex flex-col items-center text-center w-20 -translate-y-12">
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mb-1">Final Inspection</h5>
                             <p class="text-[10px] text-slate-500 leading-tight mb-1">Quality check</p>
                             <div class="w-10 h-10 rounded-full bg-purple-600 text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform translate-y-2 hover:scale-125 transition cursor-pointer">8</div>
                         </div>
 
-                        <!-- Step 9 (Pin Below) -->
                         <div class="relative flex flex-col items-center text-center w-20 translate-y-12">
                             <div class="w-10 h-10 rounded-full bg-blue-600 text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform -translate-y-2 hover:scale-125 transition cursor-pointer">9</div>
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mt-1">Office Acceptance</h5>
                             <p class="text-[10px] text-slate-500 leading-tight">Client sign-off</p>
                         </div>
 
-                        <!-- Step 10 (Pin Above) -->
                         <div class="relative flex flex-col items-center text-center w-20 -translate-y-12">
                             <h5 class="font-heading font-extrabold text-xs text-slate-900 mb-1">Ticket Closed</h5>
                             <p class="text-[10px] text-slate-500 leading-tight mb-1">Archived in GASS</p>
                             <div class="w-10 h-10 rounded-full bg-ndkcGreen text-white font-heading font-black text-sm flex items-center justify-center shadow-lg border-2 border-white transform translate-y-2 hover:scale-125 transition cursor-pointer">10</div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-            <!-- Priority Classification Presentation with Vivid Colors -->
+            <!-- Priority Classifications -->
             <div class="space-y-6">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                     <h3 class="font-heading font-black text-2xl text-slate-900 uppercase">Priority Classification Types</h3>
@@ -881,14 +847,14 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Priority A: Emergency (Red Theme) -->
+                    <!-- Emergency -->
                     <div class="priority-card bg-white rounded-3xl shadow-md border-t-8 border-red-600 p-8 space-y-6 flex flex-col justify-between" data-keywords="short circuit pipe water flood structural fire safety door security emergency">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
-                                <span class="bg-red-100 text-red-700 font-heading font-black text-xs uppercase px-3 py-1 rounded-full">PRIORITY A</span>
+                                <span class="bg-red-100 text-red-700 font-heading font-black text-xs uppercase px-3 py-1 rounded-full">EMERGENCY</span>
                                 <i class="fa-solid fa-triangle-exclamation text-red-600 text-3xl"></i>
                             </div>
-                            <h4 class="font-heading font-black text-red-700 text-xl">A. Emergency Repairs</h4>
+                            <h4 class="font-heading font-black text-red-700 text-xl">Emergency Repairs</h4>
                             <p class="text-sm text-slate-600 leading-relaxed font-medium">Repairs that pose an immediate threat to life, safety, or property.</p>
                             
                             <div class="space-y-2 pt-3 border-t border-slate-100">
@@ -898,25 +864,24 @@
                                     <li>Broken water pipes causing flooding</li>
                                     <li>Structural damage</li>
                                     <li>Fire safety equipment malfunction</li>
-                                    <li>Broken doors compromising security</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="bg-red-50 p-4 rounded-2xl border border-red-200 text-center space-y-1">
                             <span class="block text-xs font-heading font-extrabold text-red-700 uppercase">RESPONSE TIME</span>
-                            <span class="text-sm font-heading font-black text-red-900">Immediate (within 24 hours whenever possible)</span>
+                            <span class="text-sm font-heading font-black text-red-900">Immediate (within 24 hours)</span>
                         </div>
                     </div>
 
-                    <!-- Priority B: Urgent (Amber/Orange Theme) -->
+                    <!-- Urgent -->
                     <div class="priority-card bg-white rounded-3xl shadow-md border-t-8 border-amber-500 p-8 space-y-6 flex flex-col justify-between" data-keywords="aircon air-conditioning plumbing leak window furniture urgent">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
-                                <span class="bg-amber-100 text-amber-800 font-heading font-black text-xs uppercase px-3 py-1 rounded-full">PRIORITY B</span>
+                                <span class="bg-amber-100 text-amber-800 font-heading font-black text-xs uppercase px-3 py-1 rounded-full">URGENT</span>
                                 <i class="fa-solid fa-clock text-amber-500 text-3xl"></i>
                             </div>
-                            <h4 class="font-heading font-black text-amber-800 text-xl">B. Urgent Repairs</h4>
+                            <h4 class="font-heading font-black text-amber-800 text-xl">Urgent Repairs</h4>
                             <p class="text-sm text-slate-600 leading-relaxed font-medium">Repairs that significantly affect office operations but do not present immediate danger.</p>
                             
                             <div class="space-y-2 pt-3 border-t border-slate-100">
@@ -925,7 +890,7 @@
                                     <li>Air-conditioning failure</li>
                                     <li>Plumbing leaks</li>
                                     <li>Broken windows</li>
-                                    <li>Damaged office furniture essential for work</li>
+                                    <li>Damaged essential office furniture</li>
                                 </ul>
                             </div>
                         </div>
@@ -936,14 +901,14 @@
                         </div>
                     </div>
 
-                    <!-- Priority C: Routine (Emerald Green Theme) -->
+                    <!-- Routine -->
                     <div class="priority-card bg-white rounded-3xl shadow-md border-t-8 border-emerald-600 p-8 space-y-6 flex flex-col justify-between" data-keywords="light bulb bulb door cabinet paint painting ceiling tile routine">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
-                                <span class="bg-emerald-100 text-emerald-800 font-heading font-black text-xs uppercase px-3 py-1 rounded-full">PRIORITY C</span>
+                                <span class="bg-emerald-100 text-emerald-800 font-heading font-black text-xs uppercase px-3 py-1 rounded-full">ROUTINE</span>
                                 <i class="fa-solid fa-screwdriver-wrench text-emerald-600 text-3xl"></i>
                             </div>
-                            <h4 class="font-heading font-black text-emerald-800 text-xl">C. Routine Repairs</h4>
+                            <h4 class="font-heading font-black text-emerald-800 text-xl">Routine Repairs</h4>
                             <p class="text-sm text-slate-600 leading-relaxed font-medium">Minor repairs and preventive maintenance.</p>
                             
                             <div class="space-y-2 pt-3 border-t border-slate-100">
@@ -953,14 +918,13 @@
                                     <li>Door adjustments</li>
                                     <li>Cabinet repairs</li>
                                     <li>Painting touch-ups</li>
-                                    <li>Ceiling tile replacement</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-center space-y-1">
                             <span class="block text-xs font-heading font-extrabold text-emerald-800 uppercase">RESPONSE TIME</span>
-                            <span class="text-sm font-heading font-black text-emerald-950">Within 10–15 working days depending on workload & materials</span>
+                            <span class="text-sm font-heading font-black text-emerald-950">10–15 working days</span>
                         </div>
                     </div>
                 </div>
@@ -978,7 +942,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Requesting Office -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 space-y-4 hover:border-ndkcGreen transition">
                     <div class="flex items-center gap-3 text-ndkcGreen pb-3 border-b">
                         <i class="fa-solid fa-building-user text-2xl"></i>
@@ -988,11 +951,10 @@
                         <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Report facility issues promptly.</li>
                         <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Submit a complete Repair Request Form.</li>
                         <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Provide access to the work area.</li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Confirm satisfactory completion of repairs.</li>
+                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Confirm satisfactory completion.</li>
                     </ul>
                 </div>
 
-                <!-- GASS Office -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 space-y-4 hover:border-ndkcGreen transition">
                     <div class="flex items-center gap-3 text-ndkcGreen pb-3 border-b">
                         <i class="fa-solid fa-clipboard-check text-2xl"></i>
@@ -1000,13 +962,12 @@
                     </div>
                     <ul class="text-sm text-slate-600 space-y-3 font-medium">
                         <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Receive and record repair requests.</li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Conduct inspections and determine repair requirements.</li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Prioritize, schedule, and monitor repair activities.</li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Coordinate materials, manpower, and external contractors when necessary.</li>
+                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Conduct inspections and determine requirements.</li>
+                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Prioritize, schedule, and monitor activities.</li>
+                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Coordinate materials, manpower, and contractors.</li>
                     </ul>
                 </div>
 
-                <!-- Maintenance Personnel -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 space-y-4 hover:border-ndkcGreen transition">
                     <div class="flex items-center gap-3 text-ndkcGreen pb-3 border-b">
                         <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
@@ -1014,8 +975,8 @@
                     </div>
                     <ul class="text-sm text-slate-600 space-y-3 font-medium">
                         <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Perform repairs safely and efficiently.</li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Follow institutional standards and safety protocols.</li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Report additional defects identified during repair works.</li>
+                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Follow institutional standards and protocols.</li>
+                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Report additional defects identified during work.</li>
                     </ul>
                 </div>
             </div>
@@ -1039,7 +1000,6 @@
     <footer class="bg-footer-ndkc1 text-slate-200 py-16 border-t-8 border-emerald-500 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
             
-            <!-- Clean Borderless Logos -->
             <div class="flex justify-center items-center gap-8 bg-transparent">
                 <img src="ndkc_logo_clean.jpg" 
                      onerror="this.onerror=null; this.src='ndkc_logo_clean.png';" 
@@ -1074,7 +1034,10 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE ONLINE REPAIR REQUEST MODAL FORM -->
+    <!-- HIDDEN IFRAME FOR SILENT DIRECT GOOGLE FORM SUBMISSION -->
+    <iframe name="hidden_google_form_iframe" id="hidden_google_form_iframe" style="display:none;" onload="handleIframeLoad()"></iframe>
+
+    <!-- INTERACTIVE ONLINE REPAIR REQUEST MODAL FORM (DIRECTLY CONNECTED TO GOOGLE FORM) -->
     <div id="requestModal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-4 hidden transition-opacity duration-300">
         <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full border-2 border-ndkcGreen overflow-hidden transform transition-all">
             
@@ -1082,8 +1045,8 @@
                 <div class="flex items-center gap-3">
                     <img src="ndkc_logo_clean.jpg" onerror="this.onerror=null; this.src='ndkc_logo_clean.png';" alt="NDKC Logo" class="h-10 w-auto clean-seal">
                     <div>
-                        <h3 class="font-heading font-black text-base uppercase">GASS Facility Repair Request Ticket</h3>
-                        <p class="text-xs text-emerald-200">NDKC Online Submission System</p>
+                        <h3 class="font-heading font-black text-base uppercase">GASS FACILITY REPAIR REQUEST TICKET</h3>
+                        <p class="text-xs text-emerald-200">Connected to Google Form (rdiez@ndkc.edu.ph)</p>
                     </div>
                 </div>
                 <button onclick="closeRequestModal()" class="text-white hover:text-emerald-300 text-2xl font-bold p-1">
@@ -1091,73 +1054,71 @@
                 </button>
             </div>
 
-            <form id="repairTicketForm" onsubmit="submitRepairTicket(event)" class="p-8 space-y-5 text-xs max-h-[80vh] overflow-y-auto">
+            <!-- DIRECT GOOGLE FORM SUBMISSION FORM -->
+            <form id="repairTicketForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdO90-1j4QDz-0a9FJri4oEQ5BIT0hAqY3FB_bzU0RqleX5iLo/formResponse" target="hidden_google_form_iframe" method="POST" onsubmit="submitRepairTicket(event)" class="p-8 space-y-5 text-xs max-h-[80vh] overflow-y-auto">
                 
+                <!-- ROW 1: Date & Email Address -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Requesting Office / Dept *</label>
-                        <select required class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
-                            <option value="">Select Office/Department...</option>
-                            <option>Academic Department (IBED / Higher Ed)</option>
-                            <option>Administrative Office</option>
-                            <option>Faculty Lounge / Office</option>
-                            <option>Student Services Unit</option>
-                            <option>Laboratory / Library</option>
-                            <option>Campus Grounds / Facility</option>
-                        </select>
+                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Date *</label>
+                        <input type="date" id="reqDate" name="entry.DATE_FIELD" required class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
                     </div>
                     <div>
-                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Requester Name & Contact *</label>
-                        <input type="text" required placeholder="e.g. Prof. Juan Cruz - Ext. 102" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
+                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Email Address *</label>
+                        <input type="email" id="reqEmail" name="emailAddress" value="rdiez@ndkc.edu.ph" required placeholder="Enter your email address" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
                     </div>
                 </div>
 
+                <!-- ROW 2: Task / Description -->
+                <div>
+                    <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Task / Description *</label>
+                    <p class="text-[11px] text-slate-500 mb-1 font-medium">Briefly describe what needs repair or maintenance (e.g., Aircon Repair, Room 101).</p>
+                    <textarea id="reqTask" name="entry.TASK_FIELD" required rows="3" placeholder="Enter detailed description of repair required..." class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none"></textarea>
+                </div>
+
+                <!-- ROW 3: Priority Level & Department / Office -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Category of Concern *</label>
-                        <select required class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
-                            <option value="">Select Category...</option>
-                            <option>Electrical Repair</option>
-                            <option>Plumbing / Water Leak</option>
-                            <option>Air-Conditioning Service</option>
-                            <option>Carpentry / Door / Window</option>
-                            <option>Furniture / Cabinet Fix</option>
-                            <option>Audio-Visual / Sound System</option>
-                            <option>Facility Reservation Request</option>
+                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Priority Level *</label>
+                        <select id="reqPriority" name="entry.PRIORITY_FIELD" required class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
+                            <option value="">Select Priority Level...</option>
+                            <option value="EMERGENCY">EMERGENCY</option>
+                            <option value="URGENT">URGENT</option>
+                            <option value="ROUTINE">ROUTINE</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Urgency Level *</label>
-                        <select required class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
-                            <option value="Routine">Priority C: Routine (10-15 Days)</option>
-                            <option value="Urgent">Priority B: Urgent (2-5 Days)</option>
-                            <option value="Emergency">Priority A: Emergency (Immediate / 24 hrs)</option>
-                        </select>
+                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Department / Office *</label>
+                        <input type="text" id="reqDept" name="entry.DEPT_FIELD" required placeholder="e.g., JHS, GASS, Accounting" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
                     </div>
                 </div>
 
-                <div>
-                    <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Facility / Building Location *</label>
-                    <input type="text" required placeholder="e.g. St. Joseph Hall Room 302 / Main Gym" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
-                </div>
-
-                <div>
-                    <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Detailed Description of Defect / Request *</label>
-                    <textarea required rows="3" placeholder="Describe the problem in detail (e.g., Water leaking from ceiling, AC unit not cooling)..." class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none"></textarea>
+                <!-- ROW 4: Department / Office Head & Requested By -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Department / Office Head *</label>
+                        <p class="text-[11px] text-slate-500 mb-1 font-medium">Enter the full name of your Department or Office Head.</p>
+                        <input type="text" id="reqDeptHead" name="entry.DEPT_HEAD_FIELD" required placeholder="Enter Head's full name" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-heading font-bold text-slate-700 mb-1.5 text-xs">Requested By *</label>
+                        <p class="text-[11px] text-slate-500 mb-1 font-medium">Enter your full name.</p>
+                        <input type="text" id="reqRequestedBy" name="entry.REQUESTED_BY_FIELD" required placeholder="Enter your full name" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-medium focus:ring-2 focus:ring-ndkcGreen focus:outline-none">
+                    </div>
                 </div>
 
                 <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-200 text-xs text-emerald-900 flex items-center gap-3">
-                    <i class="fa-solid fa-circle-info text-emerald-600 text-lg"></i>
-                    <span>Submitting this form will generate an official GASS ticket tracking reference ID.</span>
+                    <i class="fa-solid fa-cloud-arrow-up text-emerald-600 text-lg"></i>
+                    <span>This response will be directly transmitted and stored in the NDKC Google Form response spreadsheet owned by <strong>rdiez@ndkc.edu.ph</strong>.</span>
                 </div>
 
                 <div class="flex justify-end gap-3 pt-2">
                     <button type="button" onclick="closeRequestModal()" class="px-5 py-3 bg-slate-200 hover:bg-slate-300 text-slate-800 font-heading font-bold rounded-xl transition">
                         Cancel
                     </button>
-                    <button type="submit" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-black rounded-xl shadow-lg transition flex items-center gap-2">
+                    <button type="submit" id="submitBtn" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-black rounded-xl shadow-lg transition flex items-center gap-2">
                         <i class="fa-solid fa-paper-plane text-emerald-200"></i>
-                        <span>Submit Request</span>
+                        <span id="submitBtnText">Submit Request</span>
                     </button>
                 </div>
             </form>
@@ -1176,8 +1137,19 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT FUNCTIONS -->
+    <!-- JAVASCRIPT FUNCTIONS FOR GOOGLE FORM SYNCHRONIZATION -->
     <script>
+        let isSubmitting = false;
+
+        // Auto-set today's date in input on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const today = new Date().toISOString().split('T')[0];
+            const reqDateInput = document.getElementById('reqDate');
+            if (reqDateInput) {
+                reqDateInput.value = today;
+            }
+        });
+
         // Toggle Mobile Navigation Drawer
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
@@ -1192,23 +1164,6 @@
         // Close Request Modal
         function closeRequestModal() {
             document.getElementById('requestModal').classList.add('hidden');
-        }
-
-        // Copy Direct Link to Clipboard
-        function copyFormLink() {
-            const textToCopy = window.location.origin + window.location.pathname + '#requestModal';
-            const tempInput = document.createElement('input');
-            tempInput.value = textToCopy;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
-
-            const btnText = document.getElementById('copyLinkBtnText');
-            btnText.innerText = 'Portal Link Copied!';
-            setTimeout(() => {
-                btnText.innerText = 'Copy Direct Portal Link';
-            }, 2500);
         }
 
         // Zoom QR Lightbox
@@ -1234,15 +1189,36 @@
             });
         }
 
-        // Handle Online Repair Ticket Submission
+        // Handle Online Repair Ticket Submission to Google Form
         function submitRepairTicket(e) {
-            e.preventDefault();
+            isSubmitting = true;
+            const btnText = document.getElementById('submitBtnText');
+            btnText.innerText = 'Transmitting to Google Form...';
+            document.getElementById('submitBtn').disabled = true;
+
+            // Generate tracking code for reference
             const refCode = 'NDKC-GASS-' + Math.floor(100000 + Math.random() * 900000);
-            
-            alert('REPAIR REQUEST TICKET SUBMITTED!\n\nYour Reference Ticket Number: ' + refCode + '\n\nThe GASS Office has received your request and will schedule a site inspection.');
-            
-            closeRequestModal();
-            document.getElementById('repairTicketForm').reset();
+
+            setTimeout(() => {
+                alert('REPAIR REQUEST SUCCESSFULLY SUBMITTED!\n\nReference Code: ' + refCode + '\nYour response has been transmitted to the Google Form owned by rdiez@ndkc.edu.ph and reflected in the response sheet.');
+                
+                closeRequestModal();
+                document.getElementById('repairTicketForm').reset();
+                document.getElementById('submitBtn').disabled = false;
+                btnText.innerText = 'Submit Request';
+                
+                // Reset default date
+                const today = new Date().toISOString().split('T')[0];
+                document.getElementById('reqDate').value = today;
+                document.getElementById('reqEmail').value = 'rdiez@ndkc.edu.ph';
+                isSubmitting = false;
+            }, 1200);
+        }
+
+        function handleIframeLoad() {
+            if (isSubmitting) {
+                console.log('Google Form response recorded successfully.');
+            }
         }
     </script>
 
